@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // EFECTO TYPING
+    // 1. EFECTO TYPING
     const typingTextElement = document.getElementById('typing-text');
     const phrases = ["Desarrolladora Full Stack", "Especialista en SQL", "Analista de Sistemas SAP", "Estudiante de Ingeniería"];
     let phraseIndex = 0, charIndex = 0, isDeleting = false;
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     type();
 
-    // NAVEGACIÓN Y SCROLL SUAVE 
+    // 2. NAVEGACIÓN Y SCROLL SUAVE 
     const links = document.querySelectorAll('nav a, #hero a');
     links.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -33,9 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 3. DETECTAR ÉXITO TRAS ENVIAR FORMULARIO
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        const alertBox = document.createElement('div');
+        alertBox.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-emerald-500 text-white px-8 py-4 rounded-2xl shadow-2xl font-bold animate-bounce flex items-center gap-3';
+        alertBox.innerHTML = `<span>✅</span> ¡Mensaje enviado con éxito! Te contactaré pronto.`;
+        
+        document.body.appendChild(alertBox);
+
+        // Limpiar URL para evitar que la alerta salga al recargar
+        window.history.replaceState({}, document.title, window.location.pathname);
+
+        setTimeout(() => {
+            alertBox.style.transition = 'opacity 1s';
+            alertBox.style.opacity = '0';
+            setTimeout(() => alertBox.remove(), 1000);
+        }, 4000);
+    }
 });
 
-// LÓGICA DEL MODAL (GLOBAL)
+// 4. LÓGICA DEL MODAL
 function toggleModal() {
     const modal = document.getElementById('contactModal');
     if (modal.classList.contains('hidden')) {
@@ -47,10 +66,9 @@ function toggleModal() {
     }
 }
 
-// Cerrar si se hace clic afuera
 window.onclick = function(event) {
     const modal = document.getElementById('contactModal');
-    if (event.target == modal) {
-        toggleModal();
-    }
+    if (event.target == modal) { toggleModal(); }
 }
+
+

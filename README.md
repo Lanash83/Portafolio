@@ -1,6 +1,6 @@
 # 🚀 Portafolio Profesional - Nazly Uzcategui
 
-![GitHub repo size](https://github.com/Lanash83/mi-portafolio/tree/master)
+![GitHub repo size](https://github.com/Lanash83/Portafolio)
 ![Vercel](https://nazly-u-dev.vercel.app/)
 
 Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full Stack** y estudiante de **Ingeniería de Sistemas**, con una trayectoria de más de 10 años en el sector TI.
@@ -25,7 +25,7 @@ Este proyecto contiene la lógica de automatización para la importación masiva
 
 ## 🛠️ Detalles Técnicos
 El núcleo del sistema es un archivo **XML de configuración** que permite:
-* **Extracción Dinámica:** Uso de la etiqueta `<Extorlogin>` para ejecutar queries SQL integradas que obtienen datos en tiempo real de la base de datos `FRANQUICIASFULL`.
+* **Extracción Dinámica:** Uso de la etiqueta `<Extorlogin>` para ejecutar queries SQL integradas que obtienen datos en tiempo real de la base de datos `Nombre de la BD`.
 * **Mapeo Complejo:** Configuración de objetos para Pagos Recibidos, Órdenes de Venta y aplicación de pagos a facturas y tarjetas de crédito.
 * **Control de Ejecución:** Parámetros optimizados como `<AddAllItems>`, `<DataType>` y `<TestRun>` para garantizar cargas seguras.
 
@@ -49,7 +49,7 @@ Este proyecto está configurado para desplegarse automáticamente.
 
 Conecta tu cuenta de GitHub a Vercel.
 
-Importa el repositorio mi-portafolio.
+Importa el repositorio Portafolio.
 
 Vercel detectará automáticamente los archivos y publicará tu web.
 
