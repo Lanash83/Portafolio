@@ -18,6 +18,14 @@ Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full S
 
 Este proyecto contiene la lógica de automatización para la importación masiva de datos transaccionales hacia **SAP Business One** utilizando el **Data Transfer Workbench (DTW)**.
 
+---
+
+## 📊 Nuevo Proyecto: SAP Intelligence Dashboard
+Sistema de Business Intelligence diseñado para conectar interfaces web con **SAP HANA**.
+* **Propósito:** Visualización en tiempo real de stock y valorización para "Franquicias Full".
+* **Tecnología:** Servidor en Node.js (hdb) para ejecución de queries SQL seguras.
+* **Funciones:** Filtros avanzados por bodega y reportes descargables.
+
 ## 🚀 Logros del Proyecto
 * **Eficiencia:** Mejora del 30% en los tiempos de procesamiento de facturación masiva.
 * **Calidad:** Reducción del 15% en errores manuales mediante la automatización de la migración.
