@@ -83,7 +83,7 @@ function moveSlide(projectId, step) {
     track.style.transform = `translateX(${offset}%)`;
 }
 
-// Dentro de document.addEventListener('DOMContentLoaded', () => { ... })
+// 7. Dentro de document.addEventListener('DOMContentLoaded', () => { ... })
 
 const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get('success') === 'true') {
@@ -102,4 +102,34 @@ if (urlParams.get('success') === 'true') {
         alertBox.style.opacity = '0';
         setTimeout(() => alertBox.remove(), 1000);
     }, 4000);
+}
+
+const formulario = document.getElementById('contact-form');
+
+if (formulario) {
+    formulario.addEventListener('submit', async (e) => {
+        e.preventDefault(); // Evita que la página se vaya a Formspree
+        
+        const btn = document.getElementById('btn-enviar');
+        btn.innerText = "Enviando...";
+        btn.disabled = true;
+
+        const data = new FormData(formulario);
+        
+        // Enviamos los datos de forma "silenciosa"
+        const response = await fetch(formulario.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            // SI EL ENVÍO FUE EXITOSO: Forzamos el regreso con el mensaje verde
+            window.location.href = "https://nazly-u-dev.vercel.app/?success=true";
+        } else {
+            alert("Hubo un error al enviar. Inténtalo de nuevo.");
+            btn.innerText = "Enviar Mensaje";
+            btn.disabled = false;
+        }
+    });
 }
