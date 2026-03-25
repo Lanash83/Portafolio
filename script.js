@@ -82,3 +82,24 @@ function moveSlide(projectId, step) {
     const offset = -(projectIndices[projectId] * 100);
     track.style.transform = `translateX(${offset}%)`;
 }
+
+// Dentro de document.addEventListener('DOMContentLoaded', () => { ... })
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('success') === 'true') {
+    const alertBox = document.createElement('div');
+    // Usamos las clases de Tailwind que ya tienes configuradas
+    alertBox.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-emerald-500 text-white px-8 py-4 rounded-2xl shadow-2xl font-bold animate-bounce flex items-center gap-3';
+    alertBox.innerHTML = `<span>✅</span> ¡Mensaje enviado con éxito!`;
+    
+    document.body.appendChild(alertBox);
+
+    // Esto limpia la URL (?success=true) para que no salga el mensaje cada vez que refresques
+    window.history.replaceState({}, document.title, window.location.pathname);
+
+    setTimeout(() => {
+        alertBox.style.transition = 'opacity 1s';
+        alertBox.style.opacity = '0';
+        setTimeout(() => alertBox.remove(), 1000);
+    }, 4000);
+}
