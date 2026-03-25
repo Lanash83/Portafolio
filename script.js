@@ -108,27 +108,38 @@ const formulario = document.getElementById('contact-form');
 
 if (formulario) {
     formulario.addEventListener('submit', async (e) => {
-        e.preventDefault(); // Evita que la página se vaya a Formspree
+        e.preventDefault();
         
-        const btn = document.getElementById('btn-enviar');
-        btn.innerText = "Enviando...";
-        btn.disabled = true;
+        // ... dentro del eventListener del formulario
+const btn = document.getElementById('btn-enviar');
+btn.innerHTML = `<span>⏳</span> Enviando...`;
+btn.disabled = true;
+btn.classList.add('opacity-50', 'cursor-not-allowed'); // Esto le da el efecto visual de bloqueo
 
         const data = new FormData(formulario);
         
-        // Enviamos los datos de forma "silenciosa"
-        const response = await fetch(formulario.action, {
-            method: 'POST',
-            body: data,
-            headers: { 'Accept': 'application/json' }
-        });
+        try {
+            const response = await fetch(formulario.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
 
-        if (response.ok) {
-            // SI EL ENVÍO FUE EXITOSO: Forzamos el regreso con el mensaje verde
-            window.location.href = "https://nazly-u-dev.vercel.app/?success=true";
-        } else {
-            alert("Hubo un error al enviar. Inténtalo de nuevo.");
-            btn.innerText = "Enviar Mensaje";
+            if (response.ok) {
+                // 1. Limpiar los campos del formulario
+                formulario.reset();
+
+                // 2. Cerrar el modal automáticamente
+                toggleModal();
+
+                // 3. Redirigir para mostrar el aviso verde de éxito
+                window.location.href = "https://nazly-u-dev.vercel.app/?success=true";
+            } else {
+                throw new Error('Error en servidor');
+            }
+        } catch (error) {
+            alert("Hubo un error al enviar. Por favor, revisa tu conexión.");
+            btn.innerText = originalText;
             btn.disabled = false;
         }
     });
