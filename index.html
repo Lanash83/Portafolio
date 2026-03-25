@@ -128,47 +128,53 @@
     <h2 class="text-3xl font-bold text-white mb-12 text-center">Proyectos</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-500"></div>
-            <div class="relative z-10">
-                <div class="flex justify-between items-start mb-8">
-                    <div class="p-4 bg-indigo-500/10 rounded-2xl group-hover:scale-110 transition-transform duration-500">
-                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
+        
+        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-500 z-0"></div>
+            
+ <div class="relative overflow-hidden rounded-2xl h-48">
+                <div id="carousel-1" class="flex transition-transform duration-500 h-full">
+                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
+                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
                 </div>
+                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+            </div>
+
+            <div class="relative z-10 flex-grow">
                 <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Automatización de Facturación y Recibos ERP SAP</h3>
                 <p class="text-slate-400 text-xs mb-6 italic">Optimización de carga masiva vía DTW.</p>
-              <p class="text-slate-400 text-xs mb-6 italic">Solución técnica para la carga masiva de datos transaccionales mediante XML y SQL, eliminando errores manuales y optimizando la integridad en SAP Business One.</p>
+                <p class="text-slate-400 text-xs mb-6 italic">Solución técnica para la carga masiva de datos transaccionales mediante XML y SQL, eliminando errores manuales y optimizando la integridad en SAP Business One.</p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
-             <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% Mejora en tiempos de procesamiento operativo.</span></li>
+                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% Mejora en tiempos de procesamiento operativo.</span></li>
                     <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Integración directa de Queries SQL en estructuras XML.</span></li>
-                  <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Reducción del 15% en errores manuales.</span></li>
+                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Reducción del 15% en errores manuales.</span></li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-8">
-                <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SQL Server</span>
-                <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTWr</span>
-                <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">XML</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SQL Server</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTWr</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">XML</span>
                 </div>
                 <a href="#" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
         </div>
 
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
-            <div class="relative z-10">
-                <div class="flex justify-between items-start mb-8">
-                    <div class="p-4 bg-cyan-500/10 rounded-2xl group-hover:scale-110 transition-transform duration-500">
-                        <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
-                    </div>
+        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500 z-0"></div>
+            
+           <div class="relative overflow-hidden rounded-2xl h-48">
+                <div id="carousel-2" class="flex transition-transform duration-500 h-full">
+                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
+                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
                 </div>
+                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+            </div>
+
+            <div class="relative z-10 flex-grow">
                 <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Plataforma de Capacitación</h3>
                 <p class="text-slate-400 text-xs mb-6 italic">Plataforma de inducción corporativa.</p>
-<p class="text-slate-400 text-xs mb-6 italic">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
+                <p class="text-slate-400 text-xs mb-6 italic">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
                     <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Reducción del **20% en tiempos** de inducción.</span></li>
                     <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Gestión de contenido multimedia dinámico.</span></li>
@@ -181,34 +187,39 @@
             </div>
         </div>
 
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500"></div>
-            <div class="relative z-10">
-                <div class="flex justify-between items-start mb-8">
-                    <div class="p-4 bg-emerald-500/10 rounded-2xl group-hover:scale-110 transition-transform duration-500">
-                        <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                        </svg>
-                    </div>
+        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500 z-0"></div>
+            
+           <div class="relative overflow-hidden rounded-2xl h-48">
+                <div id="carousel-3" class="flex transition-transform duration-500 h-full">
+                    <img src="img/sap1.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 1">
+                    <img src="img/sap2.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 2">
+                    <img src="img/sap3.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 3">
+                    <img src="img/sap4.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 4">
                 </div>
+                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+            </div>
+
+            <div class="relative z-10 flex-grow">
                 <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">SAP Intelligence Dashboard</h3>
-               <p class="text-slate-400 text-xs mb-6 italic">Visualización BI y optimización de inventarios .</p>
-        <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            Dashboard conectado a **SAP HANA** mediante un puente en **Node.js**. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.
-        </p>
+                <p class="text-slate-400 text-xs mb-6 italic">Visualización BI y optimización de inventarios .</p>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Dashboard conectado a **SAP HANA** mediante un puente en **Node.js**. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.
+                </p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
                     <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Conexión directa **Node.js a HANA**.</span></li>
                     <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Exportación dinámica a Excel y PDF.</span></li>
                     <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>**Reducción del 20%** en tiempos de extracción manual de datos.</span></li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-8">
-            <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">SAP HANA</span>
-            <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Node.js</span>
-            <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">hdb Driver</span>
-            <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">JavaScript</span>
-            <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Tailwind CSS</span>
-      </div>
-                <a href="https://github.com/Lanash83/SAP-B1-Automation" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">SAP HANA</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Node.js</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">hdb Driver</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">JavaScript</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Tailwind CSS</span>
+                </div>
+                <a href="https://github.com/Lanash83/Dashboard-de-Ventas-SAP" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
         </div>
 
@@ -259,13 +270,13 @@
         <div class="container mx-auto px-6">
             <div class="flex justify-center gap-6 mb-8">
                 <a href="https://github.com/Lanash83" target="_blank" title="GitHub" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
-                    <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 </a>
                 <a href="https://www.linkedin.com/in/nazly-u-3a4a6958/" target="_blank" title="LinkedIn" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
                     <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
             </div>
-            <p class="text-slate-500 text-sm font-medium">© 2025 Nazly Uzcategui - Desarrollado con ❤️ y código limpio..</p>
+            <p class="text-slate-500 text-sm font-medium">© 2026 Nazly Uzcategui - Desarrollado con ❤️ y código limpio..</p>
         </div>
     </footer>
     <script src="script.js"></script>

@@ -3,7 +3,7 @@
 ![GitHub repo size](https://github.com/Lanash83/Portafolio)
 ![Vercel](https://nazly-u-dev.vercel.app/)
 
-Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full Stack** y estudiante de **Ingeniería de Sistemas**, con una trayectoria de más de 10 años en el sector TI.
+Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full Stack** y estudiante de **Ingeniería de Sistemas**, con una trayectoria de más de 10 años en el sector TI. Mi enfoque principal es la creación de soluciones eficientes que integran el desarrollo web moderno con robustas arquitecturas de bases de datos.
 
 ## 🛠️ Stack Tecnológico
 * **Frontend:** HTML5, CSS3, Tailwind CSS.
@@ -14,43 +14,26 @@ Bienvenido al repositorio de mi portafolio personal. Soy **Desarrolladora Full S
 * **Automatización SQL:** Reducción del 30% en tiempos de procesamiento de facturación masiva en Franquicias Direct TV.
 * **Plataforma de Capacitación:** Reducción del 20% en tiempos de inducción corporativa.
 
-# 📂 Proyecto Destacado: ⚙️ SAP Business One - Automation Engine (DTW & SQL).
+## 📂 Proyectos Destacados
 
-Este proyecto contiene la lógica de automatización para la importación masiva de datos transaccionales hacia **SAP Business One** utilizando el **Data Transfer Workbench (DTW)**.
+### 1. ⚙️ SAP Business One - Automation Engine
+Lógica de automatización para la importación masiva de datos transaccionales utilizando **Data Transfer Workbench (DTW)** y consultas SQL optimizadas.
+* **Detalles:** Uso de XML de configuración para extracción dinámica y mapeo complejo de pagos y órdenes.
 
----
-
-## 📊 Nuevo Proyecto: SAP Intelligence Dashboard
+### 2. 📊 SAP Intelligence Dashboard
 Sistema de Business Intelligence diseñado para conectar interfaces web con **SAP HANA**.
 * **Propósito:** Visualización en tiempo real de stock y valorización para "Franquicias Full".
-* **Tecnología:** Servidor en Node.js (hdb) para ejecución de queries SQL seguras.
-* **Funciones:** Filtros avanzados por bodega y reportes descargables.
-
-## 🚀 Logros del Proyecto
-* **Eficiencia:** Mejora del 30% en los tiempos de procesamiento de facturación masiva.
-* **Calidad:** Reducción del 15% en errores manuales mediante la automatización de la migración.
-* **Seguridad:** Implementación de consultas directas en XML para evitar el manejo de archivos planos sensibles.
-
-## 🛠️ Detalles Técnicos
-El núcleo del sistema es un archivo **XML de configuración** que permite:
-* **Extracción Dinámica:** Uso de la etiqueta `<Extorlogin>` para ejecutar queries SQL integradas que obtienen datos en tiempo real de la base de datos `Nombre de la BD`.
-* **Mapeo Complejo:** Configuración de objetos para Pagos Recibidos, Órdenes de Venta y aplicación de pagos a facturas y tarjetas de crédito.
-* **Control de Ejecución:** Parámetros optimizados como `<AddAllItems>`, `<DataType>` y `<TestRun>` para garantizar cargas seguras.
-
-## 📂 Estructura sugerida para este repositorio
-* `/docs`: Manual de usuario en PDF.
-* `/xml-configs`: Ejemplos de archivos XML para Pagos y Órdenes.
-* `/sql-scripts`: Consultas SQL de extracción optimizadas.
-
+* **Tecnología:** Node.js y SQL.
 
 ## 📂 Estructura del Proyecto
+El proyecto sigue una estructura limpia para facilitar el mantenimiento y despliegue:
 ```text
 /
-├── img/                # Imágenes de perfil y recursos visuales
-├── index.html          # Estructura y contenido principal
-├── style.css           # Estilos y animaciones
-├── script.js           # Lógica de interactividad y efectos
-└── README.md           # Documentación
+├── img/                # Recursos visuales y capturas de proyectos
+├── index.html          # Estructura semántica y contenido principal
+├── style.css           # Estilos personalizados y animaciones Tailwind
+├── script.js           # Lógica de interactividad, carruseles y efectos
+└── README.md           # Documentación del proyecto
 
 🚀 Despliegue en Vercel
 Este proyecto está configurado para desplegarse automáticamente.

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function type() {
         const current = phrases[phraseIndex];
+        if(!typingTextElement) return;
         typingTextElement.textContent = isDeleting ? current.substring(0, charIndex - 1) : current.substring(0, charIndex + 1);
         charIndex = isDeleting ? charIndex - 1 : charIndex + 1;
         
@@ -16,59 +17,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     type();
 
-    // 2. NAVEGACIÓN Y SCROLL SUAVE 
-    const links = document.querySelectorAll('nav a, #hero a');
-    links.forEach(link => {
+    // 2. NAVEGACIÓN Y SCROLL SUAVE
+    document.querySelectorAll('nav a, #hero a').forEach(link => {
         link.addEventListener('click', (e) => {
             const targetId = link.getAttribute('href');
             if (targetId && targetId.startsWith('#')) {
                 e.preventDefault();
-                const targetSection = document.querySelector(targetId);
-                if (targetSection) {
-                    window.scrollTo({
-                        top: targetSection.offsetTop - 90,
-                        behavior: 'smooth'
-                    });
-                }
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) { targetElement.scrollIntoView({ behavior: 'smooth' }); }
             }
         });
     });
 
-    // 3. DETECTAR ÉXITO TRAS ENVIAR FORMULARIO
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-        const alertBox = document.createElement('div');
-        alertBox.className = 'fixed bottom-10 left-1/2 -translate-x-1/2 z-[200] bg-emerald-500 text-white px-8 py-4 rounded-2xl shadow-2xl font-bold animate-bounce flex items-center gap-3';
-        alertBox.innerHTML = `<span>✅</span> ¡Mensaje enviado con éxito! Te contactaré pronto.`;
-        
-        document.body.appendChild(alertBox);
-
-        // Limpiar URL para evitar que la alerta salga al recargar
-        window.history.replaceState({}, document.title, window.location.pathname);
-
-        setTimeout(() => {
-            alertBox.style.transition = 'opacity 1s';
-            alertBox.style.opacity = '0';
-            setTimeout(() => alertBox.remove(), 1000);
-        }, 4000);
-    }
+ // 3. AUTO-PLAY DE CARRUSELES
+    setInterval(() => {
+        moveSlide(1, 1);
+        moveSlide(2, 1);
+        moveSlide(3, 1);
+        // Agrega moveSlide(4, 1) si tienes un cuarto carrusel
+    }, 5000);
 });
+// 4. LÓGICA DE CARRUSELES MULTIPROYECTO
+// Objeto para rastrear la posición actual de cada carrusel de forma independiente
+const projectIndices = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
-// 4. LÓGICA DEL MODAL
-function toggleModal() {
-    const modal = document.getElementById('contactModal');
-    if (modal.classList.contains('hidden')) {
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    } else {
-        modal.classList.add('hidden');
-        document.body.style.overflow = 'auto';
-    }
+function moveSlide(projectId, step) {
+    const track = document.getElementById(`carousel-${projectId}`);
+    if (!track) return;
+    
+    const slides = track.querySelectorAll('img');
+    const totalSlides = slides.length;
+
+    // Actualizar el índice del proyecto específico
+    projectIndices[projectId] = (projectIndices[projectId] + step + totalSlides) % totalSlides;
+    
+    // Aplicar la transformación (mover el carrusel)
+    const percentage = -(projectIndices[projectId] * 100);
+    track.style.transform = `translateX(${percentage}%)`;
 }
-
-window.onclick = function(event) {
-    const modal = document.getElementById('contactModal');
-    if (event.target == modal) { toggleModal(); }
-}
-
-
