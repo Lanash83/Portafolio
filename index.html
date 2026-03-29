@@ -124,18 +124,22 @@
 </section>
 
 
+<!-- ===================== SECCIÓN PROYECTOS ===================== -->
 <section id="projects" class="py-20 container mx-auto px-6">
     <h2 class="text-3xl font-bold text-white mb-12 text-center">Proyectos</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
+        <!-- PROYECTO 1: Automatización SAP DTW -->
         <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
             <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-500 z-0"></div>
             
- <div class="relative overflow-hidden rounded-2xl h-48">
+            
+            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
                 <div id="carousel-1" class="flex transition-transform duration-500 h-full">
-                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
-                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
+                    <img src="img/dtw1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw1">
+                    <img src="img/dtw2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw2">
+                    <img src="img/dtw3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw3">
                 </div>
                 <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
                 <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
@@ -146,29 +150,30 @@
                 <p class="text-slate-400 text-xs mb-6 italic">Optimización de carga masiva vía DTW.</p>
                 <p class="text-slate-400 text-xs mb-6 italic">Solución técnica para la carga masiva de datos transaccionales mediante XML y SQL, eliminando errores manuales y optimizando la integridad en SAP Business One.</p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% Mejora en tiempos de procesamiento operativo.</span></li>
+                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% en tiempos de procesamiento operativo.</span></li>
                     <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Integración directa de Queries SQL en estructuras XML.</span></li>
                     <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Reducción del 15% en errores manuales.</span></li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-8">
                     <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SQL Server</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTWr</span>
+                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTW</span>
                     <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">XML</span>
                 </div>
-                <a href="#" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a href="https://github.com/Lanash83/sap-dtw-automatizacion-facturacion" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
             </div>
         </div>
 
+        <!-- PROYECTO 2: Plataforma de Capacitación -->
         <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
             <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500 z-0"></div>
             
-           <div class="relative overflow-hidden rounded-2xl h-48">
+            
+            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
                 <div id="carousel-2" class="flex transition-transform duration-500 h-full">
-                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
-                    <img src="img/sap.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP ">
+                    <img src="img/ws.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="Plataforma 1">
                 </div>
-                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                <button onclick="moveSlide(2, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                <button onclick="moveSlide(2, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
             </div>
 
             <div class="relative z-10 flex-grow">
@@ -176,7 +181,7 @@
                 <p class="text-slate-400 text-xs mb-6 italic">Plataforma de inducción corporativa.</p>
                 <p class="text-slate-400 text-xs mb-6 italic">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Reducción del **20% en tiempos** de inducción.</span></li>
+                    <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Reducción del 20% en tiempos de inducción.</span></li>
                     <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Gestión de contenido multimedia dinámico.</span></li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-8">
@@ -187,30 +192,32 @@
             </div>
         </div>
 
+        <!-- PROYECTO 3: SAP Intelligence Dashboard -->
         <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
             <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500 z-0"></div>
             
-           <div class="relative overflow-hidden rounded-2xl h-48">
+            
+            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
                 <div id="carousel-3" class="flex transition-transform duration-500 h-full">
-                    <img src="img/sap1.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 1">
-                    <img src="img/sap2.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 2">
-                    <img src="img/sap3.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 3">
-                    <img src="img/sap4.jpg" class="w-full h-full object-cover flex-shrink-0" alt="SAP 4">
+                    <img src="img/sap1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 1">
+                    <img src="img/sap2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 2">
+                    <img src="img/sap3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 3">
+                    <img src="img/sap4.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 4">
                 </div>
-                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                <button onclick="moveSlide(3, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                <button onclick="moveSlide(3, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
             </div>
 
             <div class="relative z-10 flex-grow">
                 <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">SAP Intelligence Dashboard</h3>
-                <p class="text-slate-400 text-xs mb-6 italic">Visualización BI y optimización de inventarios .</p>
+                <p class="text-slate-400 text-xs mb-6 italic">Visualización BI y optimización de inventarios.</p>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    Dashboard conectado a **SAP HANA** mediante un puente en **Node.js**. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.
+                    Dashboard conectado a SAP HANA mediante un puente en Node.js. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.
                 </p>
                 <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Conexión directa **Node.js a HANA**.</span></li>
+                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Conexión directa Node.js a HANA.</span></li>
                     <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Exportación dinámica a Excel y PDF.</span></li>
-                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>**Reducción del 20%** en tiempos de extracción manual de datos.</span></li>
+                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Reducción del 20% en tiempos de extracción manual de datos.</span></li>
                 </ul>
                 <div class="flex flex-wrap gap-2 mb-8">
                     <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">SAP HANA</span>
@@ -223,6 +230,7 @@
             </div>
         </div>
 
+        <!-- PROYECTO 4 EN DESARROLLO: E-Commerce  -->
         <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
             <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
                 <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
@@ -239,8 +247,98 @@
                 </p>
             </div>
         </div>
+
+        <!-- PROYECTO 5 EN DESARROLLO: Proyecto Boutique -->
+        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
+                    En Desarrollo
+                </div>
+                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
+                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Proyecto Boutique</h3>
+                <p class="text-slate-600 text-sm max-w-[250px]">
+                    Plataforma web para gestión y catálogo de productos de boutique con panel administrativo.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 6 EN DESARROLLO: Restaurante  -->
+        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
+                    En Desarrollo
+                </div>
+                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
+                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Restaurante 4</h3>
+                <p class="text-slate-600 text-sm max-w-[250px]">
+                    Sitio web para restaurante con menú digital, reservas online y gestión de pedidos.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 7 EN DESARROLLO: Fondo de Empleados -->
+        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
+                    En Desarrollo
+                </div>
+                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
+                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Fondo de Empleados</h3>
+                <p class="text-slate-600 text-sm max-w-[250px]">
+                    Sistema web para la gestión de aportes, créditos y beneficios del fondo de empleados.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Node.js</span>
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROYECTO 8 EN DESARROLLO: Doña Chiqui Web -->
+        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
+                    En Desarrollo
+                </div>
+                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
+                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Doña Chiqui Web</h3>
+                <p class="text-slate-600 text-sm max-w-[250px]">
+                    Sitio web institucional y vitrina de productos para negocio local con catálogo dinámico.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Tailwind</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
+<!-- ===================== FIN PROYECTOS ===================== -->
 
     <section id="contact" class="py-24 text-center container mx-auto px-6">
         <h2 class="text-4xl font-extrabold text-white mb-6">¿Iniciamos un proyecto?</h2>

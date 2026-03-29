@@ -110,7 +110,7 @@ if (formulario) {
     formulario.addEventListener('submit', async (e) => {
         e.preventDefault();
         
-        // ... dentro del eventListener del formulario
+// ... dentro del eventListener del formulario
 const btn = document.getElementById('btn-enviar');
 btn.innerHTML = `<span>⏳</span> Enviando...`;
 btn.disabled = true;
