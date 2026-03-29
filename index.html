@@ -9,24 +9,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#0f172a] text-slate-300 antialiased font-['Plus_Jakarta_Sans']">
-    
+
+  
     <header class="fixed top-0 left-0 right-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-slate-800">
         <nav class="container mx-auto flex justify-between items-center px-6 py-4">
             <a href="#hero" class="text-xl font-extrabold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">NU.DEV</a>
             <ul class="hidden md:flex space-x-8 text-sm font-medium">
-                <li><a href="#about" class="hover:text-indigo-400 transition">Sobre Mí</a></li>
-                <li><a href="#skills" class="hover:text-indigo-400 transition">Habilidades</a></li>
+                <li><a href="#about"      class="hover:text-indigo-400 transition">Sobre Mí</a></li>
+                <li><a href="#skills"     class="hover:text-indigo-400 transition">Habilidades</a></li>
                 <li><a href="#experience" class="hover:text-indigo-400 transition">Experiencia</a></li>
-                <li><a href="#projects" class="hover:text-indigo-400 transition">Proyectos</a></li>
-                <li><a href="#contact" class="hover:text-indigo-400 transition">Contacto</a></li>
+                <li><a href="#projects"   class="hover:text-indigo-400 transition">Proyectos</a></li>
+                <li><a href="#contact"    class="hover:text-indigo-400 transition">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+   
     <section id="hero" class="min-h-screen flex flex-col items-center justify-center pt-20 text-center px-6">
         <div class="relative mb-8">
             <div class="absolute inset-0 bg-indigo-500 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-            <img src="img/perfil.jpg" alt="Nazly Uzcategui" class="relative w-44 h-44 md:w-52 md:h-52 rounded-full border-4 border-indigo-500/30 object-cover shadow-2xl">
+            <img src="img/perfil.jpg" alt="Nazly Uzcategui"
+                 class="relative w-44 h-44 md:w-52 md:h-52 rounded-full border-4 border-indigo-500/30 object-cover shadow-2xl">
         </div>
         <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">Nazly Uzcategui</h1>
         <div class="text-xl md:text-3xl font-semibold mb-8 text-indigo-400 h-10">
@@ -34,41 +37,47 @@
         </div>
         <div class="flex flex-wrap justify-center gap-4">
             <a href="#projects" class="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg shadow-indigo-500/20">Mis Proyectos</a>
-            <a href="HV NAZLY U 2026 DWFS.pdf" download class="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-full font-bold transition-all border border-slate-700">Descargar CV</a>
+         </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="about" class="py-24 container mx-auto px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Sobre Mí</h2>
+            <div class="grid md:grid-cols-5 gap-12 items-start">
+                <div class="md:col-span-3 space-y-6 text-lg leading-relaxed text-slate-300">
+                    <p>Soy <span class="text-white font-bold">Desarrolladora Full Stack</span> y estudiante de
+                       <span class="text-white font-bold">Ingeniería de Sistemas</span> con una trayectoria híbrida:
+                       10 años dominando la infraestructura TI y los últimos años enfocada en la creación de software robusto.</p>
+                    <p>Mi diferencial es la <span class="text-indigo-400">visión analítica</span>. No solo escribo código;
+                       entiendo los procesos de negocio. He transformado operaciones manuales en soluciones digitales
+                       eficientes utilizando el stack Node.js y SQL, impactando directamente en la productividad de las
+                       empresas donde he colaborado.</p>
+                    <div class="pt-4 flex gap-6">
+                        <div><span class="block text-3xl font-bold text-white">10+</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Años en TI</span></div>
+                        <div><span class="block text-3xl font-bold text-white">30%</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Eficiencia SQL</span></div>
+                        <div><span class="block text-3xl font-bold text-white">Full</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Stack Focus</span></div>
+                    </div>
+                </div>
+                <div class="md:col-span-2 space-y-4">
+                    <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                        <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Mi Enfoque Actual</h4>
+                        <p class="text-sm text-slate-300">Creación de APIs escalables, optimización de bases de datos relacionales y despliegue de interfaces modernas con Tailwind CSS.</p>
+                    </div>
+                    <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
+                        <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Educación</h4>
+                        <ul class="text-sm text-slate-300 space-y-1">
+                            <li>• Ingeniería de Sistemas (En curso)</li>
+                            <li>• Bootcamp Full Stack (Talento Tech)</li>
+                            <li>• Tecnóloga en Informática</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-   <section id="about" class="py-24 container mx-auto px-6">
-    <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Sobre Mí</h2>
-        <div class="grid md:grid-cols-5 gap-12 items-start">
-            <div class="md:col-span-3 space-y-6 text-lg leading-relaxed text-slate-300">
-                <p>Soy <span class="text-white font-bold">Desarrolladora Full Stack</span> y estudiante de <span class="text-white font-bold">Ingeniería de Sistemas</span> con una trayectoria híbrida: 10 años dominando la infraestructura TI y los últimos años enfocada en la creación de software robusto.</p>
-                <p>Mi diferencial es la <span class="text-indigo-400">visión analítica</span>. No solo escribo código; entiendo los procesos de negocio. He transformado operaciones manuales en soluciones digitales eficientes utilizando el stack **Node.js y SQL**, impactando directamente en la productividad de las empresas donde he colaborado.</p>
-                <div class="pt-4 flex gap-6">
-                    <div><span class="block text-3xl font-bold text-white">10+</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Años en TI</span></div>
-                    <div><span class="block text-3xl font-bold text-white">30%</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Eficiencia SQL</span></div>
-                    <div><span class="block text-3xl font-bold text-white">Full</span><span class="text-sm text-indigo-400 uppercase tracking-tighter">Stack Focus</span></div>
-                </div>
-            </div>
-            <div class="md:col-span-2 space-y-4">
-                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
-                    <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Mi Enfoque Actual</h4>
-                    <p class="text-sm text-slate-300">Creación de APIs escalables, optimización de bases de datos relacionales y despliegue de interfaces modernas con Tailwind CSS.</p>
-                </div>
-                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50">
-                    <h4 class="text-indigo-400 font-bold text-sm uppercase mb-2 italic">Educación</h4>
-                    <ul class="text-sm text-slate-300 space-y-1">
-                        <li>• Ingeniería de Sistemas (En curso)</li>
-                        <li>• Bootcamp Full Stack (Talento Tech)</li>
-                        <li>• Tecnóloga en Informática</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+    <!-- ===== HABILIDADES ===== -->
     <section id="skills" class="py-24 bg-slate-900/50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-white mb-12 text-center">Mis Habilidades Técnicas</h2>
@@ -85,7 +94,7 @@
                 </div>
                 <div class="skill-card p-6 bg-slate-800 rounded-2xl text-center border border-slate-700 hover:border-indigo-500 transition">
                     <span class="text-4xl block mb-2">
-                        <svg class="w-12 h-12 mx-auto text-indigo-400" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-12 h-12 mx-auto text-indigo-400" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2C6.48 2 2 4.02 2 6.5s4.48 4.5 10 4.5 10-2.02 10-4.5S17.52 2 12 2zm0 13c-5.52 0-10-2.02-10-4.5V13c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5v-2.5c0 2.48-4.48 4.5-10 4.5zm0 4.5c-5.52 0-10-2.02-10-4.5V19c0 2.48 4.48 4.5 10 4.5s10-2.02 10-4.5v-2.5c0 2.48-4.48 4.5-10 4.5z"/>
                         </svg>
                     </span>
@@ -101,293 +110,564 @@
         </div>
     </section>
 
-   <section id="experience" class="py-24 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Experiencia Profesional</h2>
-    <div class="space-y-12">
-        <div class="relative pl-8 border-l border-indigo-500/30">
-            <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[8.5px] top-1 shadow-[0_0_10px_#6366f1]"></div>
-            <h3 class="text-xl font-bold text-white">Desarrolladora Full Stack</h3>
-            <p class="text-indigo-400 font-medium italic">Freelance | 2023 - Actual</p>
-            <p class="mt-3 text-slate-400 max-w-3xl">Desarrollo de proyectos web personalizados aplicando arquitecturas modernas y soluciones Full Stack adaptadas al cliente.</p>
-        </div>
-        <div class="relative pl-8 border-l border-slate-700">
-            <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[8.5px] top-1"></div>
-            <h3 class="text-xl font-bold text-white">Analista de Sistemas</h3>
-            <p class="text-indigo-400 font-medium italic">TvNovedadesTv (Franquicias Direct TV) | Marzo 2021 - Actual</p>
-            <ul class="mt-3 text-slate-400 max-w-3xl space-y-2 text-sm leading-relaxed">
-                <li>• <span class="text-slate-200">Automatización:</span> Lideré la automatización de facturación masiva reduciendo tiempos de procesamiento en un <span class="text-indigo-400 font-bold">30%</span>.</li>
-                <li>• <span class="text-slate-200">Desarrollo Web & SQL:</span> Creación de consultas SQL personalizadas, reportes en "Mi Portal SAP" y colaboración en APIs y sitios web.</li>
-                <li>• <span class="text-slate-200">Gestión ERP:</span> Soporte integral y administración de bases de datos SQL (Nivel Intermedio) sobre infraestructura SAP en la nube.</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    <!-- ===== EXPERIENCIA PROFESIONAL ===== -->
+    <section id="experience" class="py-24 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-12 border-l-4 border-indigo-500 pl-4">Experiencia Profesional</h2>
 
+        <div class="grid md:grid-cols-3 gap-10 items-start">
 
-<!-- ===================== SECCIÓN PROYECTOS ===================== -->
-<section id="projects" class="py-20 container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-white mb-12 text-center">Proyectos</h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <!-- PROYECTO 1: Automatización SAP DTW -->
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-500 z-0"></div>
             
-            
-            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
-                <div id="carousel-1" class="flex transition-transform duration-500 h-full">
-                    <img src="img/dtw1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw1">
-                    <img src="img/dtw2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw2">
-                    <img src="img/dtw3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw3">
+            <div class="md:col-span-2 space-y-12">
+                <div class="relative pl-8 border-l border-indigo-500/30">
+                    <div class="absolute w-4 h-4 bg-indigo-500 rounded-full -left-[8.5px] top-1 shadow-[0_0_10px_#6366f1]"></div>
+                    <h3 class="text-xl font-bold text-white">Desarrolladora Full Stack</h3>
+                    <p class="text-indigo-400 font-medium italic">Freelance | 2023 - Actual</p>
+                    <p class="mt-3 text-slate-400 max-w-3xl">Desarrollo de proyectos web personalizados aplicando arquitecturas modernas y soluciones Full Stack adaptadas al cliente.</p>
                 </div>
-                <button onclick="moveSlide(1, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-                <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                <div class="relative pl-8 border-l border-slate-700">
+                    <div class="absolute w-4 h-4 bg-slate-700 rounded-full -left-[8.5px] top-1"></div>
+                    <h3 class="text-xl font-bold text-white">Analista de Sistemas</h3>
+                    <p class="text-indigo-400 font-medium italic">TvNovedadesTv (Franquicias Direct TV) | Marzo 2021 - Actual</p>
+                    <ul class="mt-3 text-slate-400 max-w-3xl space-y-2 text-sm leading-relaxed">
+                        <li>• <span class="text-slate-200">Automatización:</span> Automatización del sistema de facturación masiva (SAP DTW + SQL + XML) reduciendo tiempos de procesamiento en un <span class="text-indigo-400 font-bold">30%</span>.</li>
+                        <li>• <span class="text-slate-200">Desarrollo Web & SQL:</span> Desarrollo de plataforma web de capacitación interna (Django/PostgreSQL).</li>
+                        <li>• <span class="text-slate-200">Desarrollo Web & HANA:</span> Dashboard BI conectado a SAP HANA vía Node.js para visualización de ventas e inventarios en tiempo real reduciendo tiempos en un <span class="text-indigo-400 font-bold">40%</span>.</li>
+                        <li>• <span class="text-slate-200">Gestión ERP:</span> Administración y soporte del ERP SAP Business One en la nube; soporte técnico presencial y remoto.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="relative z-10 flex-grow">
-                <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Automatización de Facturación y Recibos ERP SAP</h3>
-                <p class="text-slate-400 text-xs mb-6 italic">Optimización de carga masiva vía DTW.</p>
-                <p class="text-slate-400 text-xs mb-6 italic">Solución técnica para la carga masiva de datos transaccionales mediante XML y SQL, eliminando errores manuales y optimizando la integridad en SAP Business One.</p>
-                <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% en tiempos de procesamiento operativo.</span></li>
-                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Integración directa de Queries SQL en estructuras XML.</span></li>
-                    <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Reducción del 15% en errores manuales.</span></li>
-                </ul>
-                <div class="flex flex-wrap gap-2 mb-8">
-                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SQL Server</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTW</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">XML</span>
-                </div>
-                <a href="https://github.com/Lanash83/sap-dtw-automatizacion-facturacion" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-            </div>
-        </div>
+           
+            <div class="md:col-span-1 flex flex-col gap-3">
+                <div class="relative overflow-hidden rounded-2xl border border-indigo-500/30 shadow-[0_0_40px_rgba(99,102,241,0.25)] bg-gradient-to-br from-slate-800 via-indigo-950/50 to-slate-900" style="height:270px;">
+                    <div id="carousel-exp" class="flex transition-transform duration-700 h-full">
 
-        <!-- PROYECTO 2: Plataforma de Capacitación -->
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500 z-0"></div>
-            
-            
-            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
-                <div id="carousel-2" class="flex transition-transform duration-500 h-full">
-                    <img src="img/ws.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="Plataforma 1">
-                </div>
-                <button onclick="moveSlide(2, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-                <button onclick="moveSlide(2, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
-            </div>
+                        
+                        <div class="flex-shrink-0 w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 to-indigo-950/50 p-4">
+                            <svg viewBox="0 0 220 170" class="w-full h-full opacity-90" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="220" height="170" rx="12" fill="#0f172a"/>
+                                <rect x="0" y="0" width="220" height="28" rx="12" fill="#1e293b"/>
+                                <rect x="0" y="16" width="220" height="12" fill="#1e293b"/>
+                                <circle cx="18" cy="14" r="5" fill="#ef4444"/>
+                                <circle cx="34" cy="14" r="5" fill="#f59e0b"/>
+                                <circle cx="50" cy="14" r="5" fill="#22c55e"/>
+                                <text x="10" y="48"  font-family="monospace" font-size="9" fill="#6366f1">$ node server.js</text>
+                                <text x="10" y="64"  font-family="monospace" font-size="9" fill="#22c55e">✔ Server on port 3000</text>
+                                <text x="10" y="80"  font-family="monospace" font-size="8" fill="#94a3b8">GET /api/ventas → 200 OK</text>
+                                <text x="10" y="96"  font-family="monospace" font-size="8" fill="#94a3b8">POST /api/facturas → 201</text>
+                                <text x="10" y="114" font-family="monospace" font-size="9" fill="#6366f1">SELECT * FROM T_Facturas</text>
+                                <text x="10" y="130" font-family="monospace" font-size="9" fill="#6366f1">WHERE Estado = 'Activo'</text>
+                                <text x="10" y="148" font-family="monospace" font-size="9" fill="#f59e0b">→ 1.847 rows (0.03s)</text>
+                                <rect x="10" y="158" width="6" height="10" rx="1" fill="#6366f1" opacity="0.8"/>
+                            </svg>
+                        </div>
 
-            <div class="relative z-10 flex-grow">
-                <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Plataforma de Capacitación</h3>
-                <p class="text-slate-400 text-xs mb-6 italic">Plataforma de inducción corporativa.</p>
-                <p class="text-slate-400 text-xs mb-6 italic">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
-                <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Reducción del 20% en tiempos de inducción.</span></li>
-                    <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Gestión de contenido multimedia dinámico.</span></li>
-                </ul>
-                <div class="flex flex-wrap gap-2 mb-8">
-                    <span class="px-3 py-1 bg-slate-900/50 text-cyan-400 text-[10px] font-bold rounded-lg border border-cyan-500/10 uppercase italic">Django</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-cyan-400 text-[10px] font-bold rounded-lg border border-cyan-500/10 uppercase italic">PostgreSQL</span>
-                </div>
-                <a href="#" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-            </div>
-        </div>
+  
+                        <div class="flex-shrink-0 w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 to-cyan-950/40 p-4">
+                            <svg viewBox="0 0 220 170" class="w-full h-full opacity-90" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="220" height="170" rx="12" fill="#0f172a"/>
+                                <text x="10" y="22" font-family="sans-serif" font-size="10" fill="#06b6d4" font-weight="bold">SAP Intelligence Dashboard</text>
+                                <rect x="10" y="30" width="93" height="52" rx="7" fill="#1e293b"/>
+                                <text x="18" y="47" font-family="sans-serif" font-size="7" fill="#94a3b8">Ventas Totales</text>
+                                <text x="18" y="63" font-family="sans-serif" font-size="15" fill="#06b6d4" font-weight="bold">$284k</text>
+                                <text x="18" y="76" font-family="sans-serif" font-size="7" fill="#22c55e">↑ 30% vs anterior</text>
+                                <rect x="115" y="30" width="95" height="52" rx="7" fill="#1e293b"/>
+                                <text x="122" y="47" font-family="sans-serif" font-size="7" fill="#94a3b8">Facturas Procesadas</text>
+                                <text x="122" y="63" font-family="sans-serif" font-size="15" fill="#a855f7" font-weight="bold">1.847</text>
+                                <text x="122" y="76" font-family="sans-serif" font-size="7" fill="#22c55e">↓ 15% errores</text>
+                                <rect x="10" y="92" width="200" height="64" rx="7" fill="#1e293b"/>
+                                <text x="18" y="108" font-family="sans-serif" font-size="7" fill="#94a3b8">Tendencia mensual</text>
+                                <polyline points="18,148 50,132 82,138 114,118 146,124 178,106 202,112" stroke="#6366f1" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+                                <polyline points="18,152 50,144 82,146 114,138 146,140 178,128 202,132" stroke="#06b6d4" stroke-width="1.5" fill="none" stroke-dasharray="4,2" stroke-linejoin="round"/>
+                                <circle cx="202" cy="112" r="3" fill="#6366f1"/>
+                                <circle cx="202" cy="132" r="3" fill="#06b6d4"/>
+                            </svg>
+                        </div>
 
-        <!-- PROYECTO 3: SAP Intelligence Dashboard -->
-        <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
-            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500 z-0"></div>
-            
-            
-            <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
-                <div id="carousel-3" class="flex transition-transform duration-500 h-full">
-                    <img src="img/sap1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 1">
-                    <img src="img/sap2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 2">
-                    <img src="img/sap3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 3">
-                    <img src="img/sap4.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 4">
-                </div>
-                <button onclick="moveSlide(3, -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
-                <button onclick="moveSlide(3, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
-            </div>
+                        <!-- Slide 3: Stack tecnológico -->
+                        <div class="flex-shrink-0 w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-900 to-emerald-950/40 p-4">
+                            <svg viewBox="0 0 220 170" class="w-full h-full opacity-90" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="220" height="170" rx="12" fill="#0f172a"/>
+                                <text x="65" y="22" font-family="sans-serif" font-size="11" fill="#22c55e" font-weight="bold">Tech Stack</text>
+                                <rect x="14" y="34"  width="192" height="24" rx="6" fill="#1e293b"/>
+                                <rect x="14" y="34"  width="4"   height="24" rx="2" fill="#f59e0b"/>
+                                <text x="26" y="51"  font-family="monospace" font-size="10" fill="#f59e0b">JavaScript · Node.js · Express</text>
+                                <rect x="14" y="64"  width="160" height="24" rx="6" fill="#1e293b"/>
+                                <rect x="14" y="64"  width="4"   height="24" rx="2" fill="#06b6d4"/>
+                                <text x="26" y="81"  font-family="monospace" font-size="10" fill="#06b6d4">SQL Server · PostgreSQL</text>
+                                <rect x="14" y="94"  width="176" height="24" rx="6" fill="#1e293b"/>
+                                <rect x="14" y="94"  width="4"   height="24" rx="2" fill="#a855f7"/>
+                                <text x="26" y="111" font-family="monospace" font-size="10" fill="#a855f7">SAP B1 · DTW · HANA · XML</text>
+                                <rect x="14" y="124" width="148" height="24" rx="6" fill="#1e293b"/>
+                                <rect x="14" y="124" width="4"   height="24" rx="2" fill="#6366f1"/>
+                                <text x="26" y="141" font-family="monospace" font-size="10" fill="#6366f1">HTML · CSS · Tailwind</text>
+                                <rect x="14" y="154" width="120" height="14" rx="4" fill="#1e293b"/>
+                                <rect x="14" y="154" width="4"   height="14" rx="2" fill="#22c55e"/>
+                                <text x="26" y="164" font-family="monospace" font-size="9"  fill="#22c55e">Python · Django</text>
+                            </svg>
+                        </div>
+                    </div>
 
-            <div class="relative z-10 flex-grow">
-                <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">SAP Intelligence Dashboard</h3>
-                <p class="text-slate-400 text-xs mb-6 italic">Visualización BI y optimización de inventarios.</p>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    Dashboard conectado a SAP HANA mediante un puente en Node.js. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.
-                </p>
-                <ul class="text-xs space-y-3 mb-8 text-slate-300">
-                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Conexión directa Node.js a HANA.</span></li>
-                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Exportación dinámica a Excel y PDF.</span></li>
-                    <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Reducción del 20% en tiempos de extracción manual de datos.</span></li>
-                </ul>
-                <div class="flex flex-wrap gap-2 mb-8">
-                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">SAP HANA</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Node.js</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">hdb Driver</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">JavaScript</span>
-                    <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Tailwind CSS</span>
-                </div>
-                <a href="https://github.com/Lanash83/Dashboard-de-Ventas-SAP" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-            </div>
-        </div>
+                    <button onclick="moveExpSlide(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-indigo-600/70 text-white p-1.5 rounded-full transition-all text-sm">❮</button>
+                    <button onclick="moveExpSlide(1)"  class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-indigo-600/70 text-white p-1.5 rounded-full transition-all text-sm">❯</button>
 
-        <!-- PROYECTO 4 EN DESARROLLO: E-Commerce  -->
-        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
-            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
-                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
-                    En Desarrollo
-                </div>
-                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
-                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">E-Commerce Integration</h3>
-                <p class="text-slate-600 text-sm max-w-[250px]">
-                    Sincronización automatizada entre Shopify y SAP Business One para gestión de pedidos.
-                </p>
-            </div>
-        </div>
-
-        <!-- PROYECTO 5 EN DESARROLLO: Proyecto Boutique -->
-        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
-            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
-                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
-                    En Desarrollo
-                </div>
-                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
-                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Proyecto Boutique</h3>
-                <p class="text-slate-600 text-sm max-w-[250px]">
-                    Plataforma web para gestión y catálogo de productos de boutique con panel administrativo.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
+                    <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                        <span class="exp-dot w-2 h-2 rounded-full bg-indigo-400 transition-all duration-300"></span>
+                        <span class="exp-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></span>
+                        <span class="exp-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></span>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- PROYECTO 6 EN DESARROLLO: Restaurante  -->
-        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
-            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
-                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
-                    En Desarrollo
-                </div>
-                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
-                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Restaurante 4</h3>
-                <p class="text-slate-600 text-sm max-w-[250px]">
-                    Sitio web para restaurante con menú digital, reservas online y gestión de pedidos.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROYECTO 7 EN DESARROLLO: Fondo de Empleados -->
-        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
-            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
-                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
-                    En Desarrollo
-                </div>
-                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
-                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Fondo de Empleados</h3>
-                <p class="text-slate-600 text-sm max-w-[250px]">
-                    Sistema web para la gestión de aportes, créditos y beneficios del fondo de empleados.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Node.js</span>
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">SQL</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- PROYECTO 8 EN DESARROLLO: Doña Chiqui Web -->
-        <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
-            <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
-                <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">
-                    En Desarrollo
-                </div>
-                <div class="p-4 bg-slate-800 rounded-2xl mb-6">
-                    <svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Doña Chiqui Web</h3>
-                <p class="text-slate-600 text-sm max-w-[250px]">
-                    Sitio web institucional y vitrina de productos para negocio local con catálogo dinámico.
-                </p>
-                <div class="flex flex-wrap justify-center gap-2 mt-4">
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
-                    <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Tailwind</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- ===================== FIN PROYECTOS ===================== -->
-
-    <section id="contact" class="py-24 text-center container mx-auto px-6">
-        <h2 class="text-4xl font-extrabold text-white mb-6">¿Iniciamos un proyecto?</h2>
-        <p class="text-slate-400 mb-10 text-lg max-w-xl mx-auto">Estoy lista para aportar mis habilidades técnicas en tu próximo equipo de desarrollo.</p>
-        <button onclick="toggleModal()" class="bg-indigo-600 hover:bg-indigo-500 text-white px-12 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-indigo-500/20">
-            Enviar Mensaje
-        </button>
     </section>
 
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="projects" class="py-20 container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center">Proyectos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- PROYECTO 1: Automatización SAP DTW -->
+            <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-indigo-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/20 transition-all duration-500 z-0"></div>
+                <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
+                    <div id="carousel-1" class="flex transition-transform duration-500 h-full">
+                        <img src="img/dtw1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw1">
+                        <img src="img/dtw2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw2">
+                        <img src="img/dtw3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="dtw3">
+                    </div>
+                    <button onclick="moveSlide(1,-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                    <button onclick="moveSlide(1, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                </div>
+                <div class="relative z-10 flex-grow">
+                    <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Automatización de Facturación y Recibos ERP SAP</h3>
+                    <p class="text-slate-400 text-xs mb-3 italic">Optimización de carga masiva vía DTW.</p>
+                    <p class="text-slate-400 text-xs mb-6 italic">Solución técnica para la carga masiva de datos transaccionales mediante XML y SQL, eliminando errores manuales y optimizando la integridad en SAP Business One.</p>
+                    <ul class="text-xs space-y-3 mb-8 text-slate-300">
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Mejora del 30% en tiempos de procesamiento operativo.</span></li>
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Integración directa de Queries SQL en estructuras XML.</span></li>
+                        <li class="flex items-start"><span class="text-indigo-400 mr-2">✔</span><span>Reducción del 15% en errores manuales.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SQL Server</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">SAP DTW</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-indigo-400 text-[10px] font-bold rounded-lg border border-indigo-500/10 uppercase italic">XML</span>
+                    </div>
+                    <a href="https://github.com/Lanash83/sap-dtw-automatizacion-facturacion" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+            </div>
+
+            <!-- PROYECTO 2: Plataforma de Capacitación -->
+            <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-cyan-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl group-hover:bg-cyan-500/20 transition-all duration-500 z-0"></div>
+                <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
+                    <div id="carousel-2" class="flex transition-transform duration-500 h-full">
+                        <img src="img/ws.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="Plataforma">
+                    </div>
+                    <button onclick="moveSlide(2,-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                    <button onclick="moveSlide(2, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                </div>
+                <div class="relative z-10 flex-grow">
+                    <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">Plataforma de Capacitación</h3>
+                    <p class="text-slate-400 text-xs mb-3 italic">Plataforma de inducción corporativa.</p>
+                    <p class="text-slate-400 text-xs mb-6 italic">Plataforma centralizada para formación corporativa que redujo tiempos de inducción en un 20%.</p>
+                    <ul class="text-xs space-y-3 mb-8 text-slate-300">
+                        <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Reducción del 20% en tiempos de inducción.</span></li>
+                        <li class="flex items-start"><span class="text-cyan-400 mr-2">✔</span><span>Gestión de contenido multimedia dinámico.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-slate-900/50 text-cyan-400 text-[10px] font-bold rounded-lg border border-cyan-500/10 uppercase italic">Django</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-cyan-400 text-[10px] font-bold rounded-lg border border-cyan-500/10 uppercase italic">PostgreSQL</span>
+                    </div>
+                    <a href="#" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+            </div>
+
+            <!-- PROYECTO 3: SAP Intelligence Dashboard -->
+            <div class="group relative bg-slate-800/40 rounded-3xl border border-slate-800 p-8 hover:border-emerald-500/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col gap-6">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all duration-500 z-0"></div>
+                <div class="relative overflow-hidden rounded-2xl bg-slate-900" style="height:220px;">
+                    <div id="carousel-3" class="flex transition-transform duration-500 h-full">
+                        <img src="img/sap1.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 1">
+                        <img src="img/sap2.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 2">
+                        <img src="img/sap3.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 3">
+                        <img src="img/sap4.jpg" class="flex-shrink-0" style="width:100%;height:100%;object-fit:contain;object-position:center;" alt="SAP 4">
+                    </div>
+                    <button onclick="moveSlide(3,-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❮</button>
+                    <button onclick="moveSlide(3, 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full">❯</button>
+                </div>
+                <div class="relative z-10 flex-grow">
+                    <h3 class="text-2xl font-bold text-white mb-2 italic uppercase tracking-tight">SAP Intelligence Dashboard</h3>
+                    <p class="text-slate-400 text-xs mb-3 italic">Visualización BI y optimización de inventarios.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Dashboard conectado a SAP HANA mediante un puente en Node.js. Visualización en tiempo real de inventarios y ventas, logrando una reducción del 20% en tiempos de extracción.</p>
+                    <ul class="text-xs space-y-3 mb-8 text-slate-300">
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Conexión directa Node.js a HANA.</span></li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Exportación dinámica a Excel y PDF.</span></li>
+                        <li class="flex items-start"><span class="text-emerald-500 mr-2">✔</span><span>Reducción del 20% en tiempos de extracción manual de datos.</span></li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">SAP HANA</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Node.js</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">hdb Driver</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-900/50 text-emerald-400 text-[10px] font-bold rounded-lg border border-emerald-500/10 uppercase italic">Tailwind CSS</span>
+                    </div>
+                    <a href="https://github.com/Lanash83/Dashboard-de-Ventas-SAP" target="_blank" class="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-widest group/link">Ver Repositorio <svg class="w-4 h-4 transition-transform group-hover/link:translate-x-1" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+            </div>
+
+            <!-- PROYECTO 4 EN DESARROLLO: E-Commerce -->
+            <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+                <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                    <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">En Desarrollo</div>
+                    <div class="p-4 bg-slate-800 rounded-2xl mb-6"><svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg></div>
+                    <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">E-Commerce Integration</h3>
+                    <p class="text-slate-600 text-sm max-w-[250px]">Sincronización automatizada entre Shopify y SAP Business One para gestión de pedidos.</p>
+                </div>
+            </div>
+
+            <!-- PROYECTO 5 EN DESARROLLO: Proyecto Boutique -->
+            <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+                <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                    <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">En Desarrollo</div>
+                    <div class="p-4 bg-slate-800 rounded-2xl mb-6"><svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
+                    <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Proyecto Boutique</h3>
+                    <p class="text-slate-600 text-sm max-w-[250px]">Plataforma web para gestión y catálogo de productos de boutique con panel administrativo.</p>
+                    <div class="flex flex-wrap justify-center gap-2 mt-4">
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 6 EN DESARROLLO: Restaurante -->
+            <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+                <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                    <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">En Desarrollo</div>
+                    <div class="p-4 bg-slate-800 rounded-2xl mb-6"><svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg></div>
+                    <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Restaurante 4</h3>
+                    <p class="text-slate-600 text-sm max-w-[250px]">Sitio web para restaurante con menú digital, reservas online y gestión de pedidos.</p>
+                    <div class="flex flex-wrap justify-center gap-2 mt-4">
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 7 EN DESARROLLO: Fondo de Empleados -->
+            <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+                <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                    <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">En Desarrollo</div>
+                    <div class="p-4 bg-slate-800 rounded-2xl mb-6"><svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div>
+                    <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Fondo de Empleados</h3>
+                    <p class="text-slate-600 text-sm max-w-[250px]">Sistema web para la gestión de aportes, créditos y beneficios del fondo de empleados.</p>
+                    <div class="flex flex-wrap justify-center gap-2 mt-4">
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Node.js</span>
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">SQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROYECTO 8 EN DESARROLLO: Doña Chiqui Web -->
+            <div class="group relative bg-slate-900/20 rounded-3xl border border-slate-800 border-dashed p-8 transition-all duration-500 overflow-hidden">
+                <div class="relative z-10 flex flex-col h-full justify-center items-center text-center">
+                    <div class="mb-4 px-3 py-1 bg-amber-500/10 text-amber-500 text-[10px] font-black rounded-full border border-amber-500/20 uppercase tracking-widest animate-pulse">En Desarrollo</div>
+                    <div class="p-4 bg-slate-800 rounded-2xl mb-6"><svg class="w-8 h-8 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></div>
+                    <h3 class="text-xl font-bold text-slate-500 mb-2 uppercase italic">Doña Chiqui Web</h3>
+                    <p class="text-slate-600 text-sm max-w-[250px]">Sitio web institucional y vitrina de productos para negocio local con catálogo dinámico.</p>
+                    <div class="flex flex-wrap justify-center gap-2 mt-4">
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">HTML/CSS</span>
+                        <span class="px-2 py-1 bg-slate-800/60 text-slate-600 text-[10px] font-bold rounded-lg border border-slate-700/30 uppercase italic">Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ===== FIN PROYECTOS ===== -->
+
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contact" class="py-24 bg-slate-900/30">
+        <div class="container mx-auto px-6 max-w-6xl">
+
+            <!-- Fila 1: texto izquierda + imagen/visual derecha -->
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-14">
+
+                <!-- Izquierda: headline + párrafo + botón -->
+                <div>
+                    <p class="text-indigo-400 font-bold text-xs uppercase tracking-widest mb-3">CREEMOS JUNTOS</p>
+                    <h2 class="text-4xl font-extrabold text-white mb-6 leading-tight">En que puedo<br>ayudarte?</h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Listo para crear algo extraordinario juntos? Si tienes un proyecto en mente, buscas colaboracion o simplemente quieres charlar sobre desarrollo web, conversemos. Estoy siempre abierto a nuevas oportunidades y desafios que nos permitan transformar ideas en experiencias digitales memorables. Hablemos de como puedo aportar valor a tu proximo proyecto.
+                    </p>
+                    <h3 class="text-xl font-bold text-white mb-2">¿Iniciamos un proyecto?</h3>
+                    <p class="text-slate-400 text-sm mb-6">
+                        Estoy lista para aportar mis habilidades técnicas en tu próximo equipo de desarrollo.
+                    </p>
+                    <button onclick="toggleModal()"
+                            class="bg-indigo-600 hover:bg-indigo-500 text-white px-10 py-4 rounded-full font-bold text-lg transition-all shadow-lg shadow-indigo-500/20">
+                        ✉️ Enviar Mensaje
+                    </button>
+                </div>
+
+                <!-- Derecha: tarjeta cian - terminal dev -->
+                <div class="flex items-center justify-center">
+                    <div class="relative w-full max-w-sm rounded-3xl overflow-hidden p-6 flex flex-col gap-4" style="background:linear-gradient(145deg,#042a2a 0%,#063838 45%,#041e2e 100%); border:1.5px solid rgba(6,182,212,0.65); box-shadow:0 0 0 1px rgba(6,182,212,0.15), 0 0 70px rgba(6,182,212,0.4), inset 0 1px 0 rgba(255,255,255,0.06);">
+                        <!-- Orb cian de fondo -->
+                        <div style="position:absolute;top:-30px;right:-30px;width:140px;height:140px;background:radial-gradient(circle,rgba(6,182,212,0.2) 0%,transparent 70%);pointer-events:none;"></div>
+                        <div style="position:absolute;bottom:-20px;left:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(20,184,166,0.15) 0%,transparent 70%);pointer-events:none;"></div>
+
+                        <!-- Terminal SVG -->
+                        <div class="relative z-10 rounded-2xl overflow-hidden" style="border:1px solid rgba(6,182,212,0.4);box-shadow:0 0 20px rgba(6,182,212,0.25);">
+                            <svg viewBox="0 0 320 160" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Terminal window -->
+                                <rect width="320" height="160" rx="10" fill="#041e1e"/>
+                                <!-- Title bar -->
+                                <rect width="320" height="28" rx="10" fill="#063030"/>
+                                <rect y="18" width="320" height="10" fill="#063030"/>
+                                <!-- Traffic lights -->
+                                <circle cx="20" cy="14" r="5" fill="#ef4444"/>
+                                <circle cx="36" cy="14" r="5" fill="#f59e0b"/>
+                                <circle cx="52" cy="14" r="5" fill="#22c55e"/>
+                                <!-- Title -->
+                                <text x="130" y="18" font-family="monospace" font-size="8" fill="#06b6d4" opacity="0.7">nazly@portfolio:~</text>
+                                <!-- Code lines -->
+                                <text x="14" y="46" font-family="monospace" font-size="8.5" fill="#06b6d4">$ git status</text>
+                                <text x="14" y="60" font-family="monospace" font-size="8" fill="#22c55e">On branch main — up to date ✔</text>
+                                <text x="14" y="75" font-family="monospace" font-size="8.5" fill="#06b6d4">$ node server.js</text>
+                                <text x="14" y="89" font-family="monospace" font-size="8" fill="#22c55e">✔ Server running on port 3000</text>
+                                <text x="14" y="104" font-family="monospace" font-size="8.5" fill="#06b6d4">$ SELECT * FROM proyectos</text>
+                                <text x="14" y="118" font-family="monospace" font-size="8" fill="#94a3b8">WHERE estado = <tspan fill="#f59e0b">'activo'</tspan></text>
+                                <text x="14" y="133" font-family="monospace" font-size="8" fill="#22c55e">→ 6 rows returned (0.02s)</text>
+                                <!-- Cursor blink -->
+                                <rect x="14" y="143" width="7" height="11" rx="1" fill="#06b6d4" opacity="0.85"/>
+                            </svg>
+                        </div>
+
+                        <!-- Info de contacto -->
+                        <div class="space-y-2.5 relative z-10">
+                            <div class="flex items-center gap-3 p-3 rounded-xl" style="background:rgba(6,182,212,0.07);border:1px solid rgba(6,182,212,0.25);">
+                                <div style="width:30px;height:30px;border-radius:8px;background:rgba(6,182,212,0.15);border:1px solid rgba(6,182,212,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                    <span style="font-size:13px;">📧</span>
+                                </div>
+                                <div>
+                                    <p style="font-size:9px;color:#0891b2;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1px;">Correo</p>
+                                    <p style="font-size:11.5px;color:#e2e8f0;font-weight:600;">nazly.uzcategui@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl" style="background:rgba(6,182,212,0.07);border:1px solid rgba(6,182,212,0.25);">
+                                <div style="width:30px;height:30px;border-radius:8px;background:rgba(6,182,212,0.15);border:1px solid rgba(6,182,212,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                    <span style="font-size:13px;">💼</span>
+                                </div>
+                                <div>
+                                    <p style="font-size:9px;color:#0891b2;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1px;">LinkedIn</p>
+                                    <p style="font-size:11.5px;color:#22d3ee;font-weight:600;">nazly-u-3a4a6958</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl" style="background:rgba(6,182,212,0.07);border:1px solid rgba(6,182,212,0.25);">
+                                <div style="width:30px;height:30px;border-radius:8px;background:rgba(20,184,166,0.15);border:1px solid rgba(20,184,166,0.35);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                                    <span style="font-size:13px;">🌎</span>
+                                </div>
+                                <div>
+                                    <p style="font-size:9px;color:#0891b2;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1px;">Ubicación</p>
+                                    <p style="font-size:11.5px;color:#2dd4bf;font-weight:600;">Colombia · Remoto</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Badge disponible -->
+                        <div class="flex items-center justify-center gap-2 py-2 px-4 mx-auto rounded-full relative z-10" style="background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.3);">
+                            <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                            <span style="color:#34d399;font-size:11px;font-weight:700;">Disponible para proyectos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <!--  Privacidad -->
+            <div class="mt-10 mb-4 flex items-center gap-5 p-6 max-w-2xl mx-auto rounded-2xl border border-indigo-500/20 bg-gradient-to-r from-slate-800/60 to-indigo-950/40 shadow-[0_0_32px_0_rgba(99,102,241,0.18)] backdrop-blur-md">
+                <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center shadow-[0_0_16px_rgba(99,102,241,0.3)]">
+                    <span class="text-2xl">🛡️</span>
+                </div>
+                <div>
+                    <p class="text-white font-bold text-sm mb-1 tracking-wide">Privacidad ante todo.</p>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Tu información está segura. Nunca recopilaré datos sin que tú lo autorices previamente.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="grid md:grid-cols-3 gap-6 items-center mb-10">
+
+                <!-- Ubicación (ahora a la izquierda) -->
+                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50 space-y-3">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="text-lg">📍</span>
+                        <h4 class="text-white font-bold uppercase text-xs tracking-widest">Ubicación</h4>
+                    </div>
+                    <p class="text-indigo-400 font-semibold text-sm">Trabajando para cualquier lugar 🌎 desde Colombia</p>
+                </div>
+
+                <!-- Carrusel mini iconos dev (centro) con fondo mejorado -->
+                <div class="flex flex-col items-center gap-3">
+                    <div class="relative overflow-hidden rounded-2xl border border-indigo-500/30 w-full shadow-[0_0_30px_rgba(99,102,241,0.25)] bg-gradient-to-br from-slate-800 via-indigo-950/60 to-slate-900" style="height:170px;">
+                        <div id="carousel-dev" class="flex transition-transform duration-600 h-full">
+
+                            <!-- Slide 1: Full Stack -->
+                            <div class="flex-shrink-0 w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-900/80 to-indigo-950/50">
+                                <svg viewBox="0 0 56 56" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="12" fill="#1e293b"/>
+                                    <text x="8" y="38" font-family="monospace" font-size="26" fill="#f59e0b">&lt;/&gt;</text>
+                                </svg>
+                                <span class="text-xs text-slate-300 font-semibold tracking-wide">Full Stack Dev</span>
+                            </div>
+
+                            <!-- Slide 2: Base de datos -->
+                            <div class="flex-shrink-0 w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-900/80 to-cyan-950/50">
+                                <svg viewBox="0 0 56 56" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="12" fill="#1e293b"/>
+                                    <ellipse cx="28" cy="20" rx="14" ry="5" fill="none" stroke="#6366f1" stroke-width="2"/>
+                                    <ellipse cx="28" cy="28" rx="14" ry="5" fill="none" stroke="#6366f1" stroke-width="2"/>
+                                    <ellipse cx="28" cy="36" rx="14" ry="5" fill="none" stroke="#06b6d4" stroke-width="2"/>
+                                    <line x1="14" y1="20" x2="14" y2="36" stroke="#6366f1" stroke-width="2"/>
+                                    <line x1="42" y1="20" x2="42" y2="36" stroke="#6366f1" stroke-width="2"/>
+                                </svg>
+                                <span class="text-xs text-slate-300 font-semibold tracking-wide">SQL & Datos</span>
+                            </div>
+
+                            <!-- Slide 3: Dashboard BI -->
+                            <div class="flex-shrink-0 w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-900/80 to-emerald-950/50">
+                                <svg viewBox="0 0 56 56" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="12" fill="#1e293b"/>
+                                    <rect x="8" y="14" width="40" height="28" rx="4" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+                                    <line x1="8" y1="22" x2="48" y2="22" stroke="#22c55e" stroke-width="1"/>
+                                    <rect x="12" y="28" width="7"  height="10" rx="1" fill="#6366f1"/>
+                                    <rect x="22" y="32" width="7"  height="6"  rx="1" fill="#06b6d4"/>
+                                    <rect x="32" y="26" width="7"  height="12" rx="1" fill="#22c55e"/>
+                                    <rect x="42" y="30" width="3"  height="8"  rx="1" fill="#f59e0b"/>
+                                </svg>
+                                <span class="text-xs text-slate-300 font-semibold tracking-wide">BI & Dashboards</span>
+                            </div>
+
+                            <!-- Slide 4: SAP -->
+                            <div class="flex-shrink-0 w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-slate-900/80 to-purple-950/50">
+                                <svg viewBox="0 0 56 56" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="56" height="56" rx="12" fill="#1e293b"/>
+                                    <circle cx="28" cy="28" r="13" fill="none" stroke="#a855f7" stroke-width="2"/>
+                                    <circle cx="28" cy="28" r="5"  fill="#a855f7" opacity="0.4"/>
+                                    <line x1="28" y1="15" x2="28" y2="10" stroke="#a855f7" stroke-width="1.5"/>
+                                    <line x1="28" y1="41" x2="28" y2="46" stroke="#a855f7" stroke-width="1.5"/>
+                                    <line x1="15" y1="28" x2="10" y2="28" stroke="#a855f7" stroke-width="1.5"/>
+                                    <line x1="41" y1="28" x2="46" y2="28" stroke="#a855f7" stroke-width="1.5"/>
+                                </svg>
+                                <span class="text-xs text-slate-300 font-semibold tracking-wide">SAP ERP</span>
+                            </div>
+                        </div>
+
+                        <button onclick="moveDevSlide(-1)" class="absolute left-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-indigo-600/60 text-white p-1 rounded-full transition-all text-xs">❮</button>
+                        <button onclick="moveDevSlide(1)"  class="absolute right-1 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-indigo-600/60 text-white p-1 rounded-full transition-all text-xs">❯</button>
+                    </div>
+                    <div class="flex gap-1.5">
+                        <span class="dev-dot w-2 h-2 rounded-full bg-indigo-400 transition-all duration-300"></span>
+                        <span class="dev-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></span>
+                        <span class="dev-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></span>
+                        <span class="dev-dot w-2 h-2 rounded-full bg-slate-600 transition-all duration-300"></span>
+                    </div>
+                </div>
+
+                <!-- Disponibilidad (ahora a la derecha) -->
+                <div class="p-6 bg-slate-800/40 rounded-2xl border border-slate-700/50 space-y-3">
+                    <div class="flex items-center gap-2 mb-1">
+                        <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse flex-shrink-0"></span>
+                        <h4 class="text-white font-bold uppercase text-xs tracking-widest">Disponibilidad</h4>
+                    </div>
+                    <p class="text-emerald-400 font-semibold text-sm">Disponible para proyectos</p>
+                    <ul class="text-slate-400 text-xs space-y-1.5">
+                        <li>✔ Freelance / Remoto</li>
+                        <li>✔ Tiempo parcial o completo</li>
+                        <li>✔ Colaboraciones internacionales</li>
+                        <li>✔ Buscando nuevos retos ✨</li>
+                    </ul>
+                </div>
+
+            </div>
+
+   
+
+        </div>
+    </section>
+    <!-- ===== FIN CONTACTO ===== -->
+
+
+    <!-- ===== MODAL ===== -->
     <div id="contactModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 bg-[#0f172a]/80 backdrop-blur-md">
         <div class="bg-slate-800 border border-slate-700 w-full max-w-md rounded-3xl p-8 shadow-2xl relative">
             <button onclick="toggleModal()" class="absolute top-4 right-6 text-slate-400 hover:text-white text-2xl font-bold">&times;</button>
             <h3 class="text-2xl font-bold text-white mb-6 text-center">Contáctame</h3>
             <form id="contact-form" action="https://formspree.io/f/xojjaoqr" method="POST" class="space-y-5">
-    <div>
-        <label class="block text-sm font-medium text-slate-400 mb-2">Tu Correo Electrónico</label>
-        <input type="email" name="email" required 
-            class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
-            placeholder="nombre@ejemplo.com">
-    </div>
-
-    <div>
-        <label class="block text-sm font-medium text-slate-400 mb-2">¿Cómo puedo ayudarte?</label>
-        <textarea name="message" rows="4" required 
-            class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
-            placeholder="Escribe tu mensaje aquí..."></textarea>
-    </div>
-
-    <button type="submit" id="btn-enviar" 
-        class="w-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/20 flex justify-center items-center gap-2">
-        <span>Enviar Mensaje</span>
-    </button>
-</form>
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-2">Tu Correo Electrónico</label>
+                    <input type="email" name="email" required
+                           class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                           placeholder="nombre@ejemplo.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-400 mb-2">¿Cómo puedo ayudarte?</label>
+                    <textarea name="message" rows="4" required
+                              class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                              placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit" id="btn-enviar"
+                        class="w-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-indigo-500/20 flex justify-center items-center gap-2">
+                    <span>Enviar Mensaje</span>
+                </button>
+            </form>
         </div>
     </div>
 
+
+    <!-- ===== FOOTER ===== -->
     <footer class="py-12 border-t border-slate-800 bg-[#0f172a] text-center">
         <div class="container mx-auto px-6">
             <div class="flex justify-center gap-6 mb-8">
-                <a href="https://github.com/Lanash83" target="_blank" title="GitHub" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
+                <a href="https://github.com/Lanash83" target="_blank" title="GitHub"
+                   class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
                     <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12z"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/nazly-u-3a4a6958/" target="_blank" title="LinkedIn" class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
+                <a href="https://www.linkedin.com/in/nazly-u-3a4a6958/" target="_blank" title="LinkedIn"
+                   class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700 shadow-lg group">
                     <svg class="w-6 h-6 text-white group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </a>
             </div>
-            <p class="text-slate-500 text-sm font-medium">© 2026 Nazly Uzcategui - Desarrollado con ❤️ y código limpio..</p>
+            <p class="text-slate-500 text-sm font-medium">© 2026 Nazly Uzcategui — Desarrollado con ❤️ y código limpio.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+
+
+    <!-- ===== SCRIPTS ===== -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script>
+        // Carrusel Experiencia
+        let expIndex = 0;
+        function moveExpSlide(step) {
+            const track = document.getElementById('carousel-exp');
+            const total = track.children.length;
+            expIndex = (expIndex + step + total) % total;
+            track.style.transform = `translateX(-${expIndex * 100}%)`;
+            document.querySelectorAll('.exp-dot').forEach((d, i) => {
+                d.classList.toggle('bg-indigo-400', i === expIndex);
+                d.classList.toggle('bg-slate-600',  i !== expIndex);
+            });
+        }
+        setInterval(() => moveExpSlide(1), 4000);
+
+        // Carrusel Dev Icons (Contacto)
+        let devIndex = 0;
+        function moveDevSlide(step) {
+            const track = document.getElementById('carousel-dev');
+            const total = track.children.length;
+            devIndex = (devIndex + step + total) % total;
+            track.style.transform = `translateX(-${devIndex * 100}%)`;
+            document.querySelectorAll('.dev-dot').forEach((d, i) => {
